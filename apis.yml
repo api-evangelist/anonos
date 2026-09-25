@@ -1,23 +1,79 @@
 aid: anonos
+
 name: Anonos
-description: 'Anonos is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://anonos.com/images/social-anonos.webp
+
+description: 'Anonos is a data privacy and tokenization company that enables organizations to use sensitive data securely without compromising its value. Over a decade of innovation, Anonos provides advanced tokenization, policy‑controlled protection, and utility‑preserving data use across analytics, AI, and enterprise workflows, helping customers meet privacy, security, governance, and compliance requirements.'
+
 url: https://raw.githubusercontent.com/api-evangelist/anonos/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-25 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-24'
+
 modified: '2026-09-24'
+
 tags:
-- Company
-apis: []
+- Tokenization
+- Data Privacy
+- Data Security
+- Enterprise Data
+- Analytics
+- Compliance
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Security
+  url: https://anonos.com/privacy
+- type: Conformance
+  url: conformance/anonos-conformance.yml
+- type: SecurityTxt
+  url: well-known/anonos-security.txt
+- type: WellKnown
+  url: well-known/anonos-well-known.yml
+- type: Hosts
+  url: hosts/anonos-hosts.yml
+- type: Vendors
+  url: vendors/anonos-vendors.yml
+- type: Support
+  url: https://anonos.com/support
+- type: PrivacyPolicy
+  url: https://anonos.com/privacy
+- type: Documentation
+  url: https://anonos.com/docs
+- type: VulnerabilityDisclosure
+  url: security/anonos-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/anonos-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://anonos.com
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: Documentation is HTML without a machine‑readable OpenAPI spec.
+  evidence:
+    - url: https://anonos.com/docs
+      status: 200
+  checked: 2026-09-25
+x-enrichment:
+  date: '2026-09-25'
+  status: enriched
+  artifacts_added: 8
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local

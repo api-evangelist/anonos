@@ -1,0 +1,17 @@
+generated: '2026-09-25'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://anonos.com/privacy
+sources:
+- https://anonos.com/privacy
+standards:
+- id: gdpr
+  conforms: true
+  evidence: 'Where the GDPR or UK GDPR applies, we process personal information on these legal bases: consent (non-essential cookies and certain
+    marketing); performance of a contract (Services you or your organization request); legitimate interests (operating, securing, and improving
+    the Site and our business, balanced against your rights); and legal obligation.'
+- id: ccpa
+  conforms: true
+  evidence: California residents have rights under the CCPA/CPRA, including to know, correct, delete, and opt out of the sale or sharing of personal
+    information; we do not discriminate against anyone for exercising privacy rights.
+docs: https://anonos.com/privacy
